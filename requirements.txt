@@ -1,4 +1,73 @@
-mlflow
+# =====================================================================
+# MLflow Starter Kit - Project Dependencies
+# =====================================================================
+# This file lists all Python packages needed to run the ML projects.
+# Install with: pip install -r requirements.txt
+# =====================================================================
+
+# CORE MLFLOW
+# =====================================================================
+# MLflow: The main library for tracking ML experiments and managing models
+# Allows us to log metrics, parameters, models, and artifacts
+# Official docs: https://mlflow.org/
+mlflow==2.16.2
+
+# MACHINE LEARNING
+# =====================================================================
+# Scikit-learn: Popular library for classical machine learning algorithms
+# Used for: LogisticRegression, RandomForest, train_test_split, etc.
+# Official docs: https://scikit-learn.org/
 scikit-learn
-numpy
+
+# DEEP LEARNING
+# =====================================================================
+# TensorFlow: Google's deep learning framework (includes Keras)
+# Used for: Building neural networks, training on GPUs
+# Note: May take 2-3 minutes to install (large file ~500MB)
+tensorflow
+
+# Keras: High-level neural network API (now integrated in TensorFlow)
+# Used for: Building and training Artificial Neural Networks
+# Official docs: https://keras.io/
+keras
+
+# DATA MANIPULATION
+# =====================================================================
+# Pandas: Data analysis and manipulation library
+# Used for: Loading CSV files, data preprocessing, data exploration
+# Official docs: https://pandas.pydata.org/
 pandas
+
+# NumPy: Numerical computing library (math on arrays and matrices)
+# Used for: Array operations, mathematical computations
+# Official docs: https://numpy.org/
+numpy
+
+# HYPERPARAMETER OPTIMIZATION
+# =====================================================================
+# Hyperopt: Library for optimizing machine learning hyperparameters
+# Used for: Intelligent hyperparameter search (smarter than random search)
+# Official docs: https://github.com/hyperopt/hyperopt
+hyperopt
+
+# JUPYTER & NOTEBOOK SUPPORT
+# =====================================================================
+# Jupyter: Interactive notebook environment
+# Used for: Running and editing the .ipynb notebook files
+# Note: Can also use jupyterlab instead for a better interface
+jupyter
+
+# IPython: Enhanced interactive Python shell
+# Used for: Better notebook kernel functionality
+ipython
+
+# =====================================================================
+# NOTES:
+# =====================================================================
+# 1. Install all at once: pip install -r requirements.txt
+# 2. Update pip first: pip install --upgrade pip
+# 3. Using virtual environment is STRONGLY recommended!
+#    - Windows: python -m venv .venv && .\.venv\Scripts\Activate.ps1
+#    - Mac/Linux: python3 -m venv .venv && source .venv/bin/activate
+# 4. If installation fails, try: pip install --no-cache-dir -r requirements.txt
+# =====================================================================

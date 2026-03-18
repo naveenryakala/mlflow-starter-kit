@@ -1,21 +1,69 @@
-# Environments
+# ===============================
+# 🔐 Environment & Secrets
+# ===============================
 .env
-.venv
-env/
+.env.*
+
+# ===============================
+# 🐍 Python Virtual Environments
+# ===============================
+# (Keeping in case someone else uses venv)
+.venv/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
+# ===============================
+# 🧠 Conda Environments (not needed locally)
+# ===============================
+# Conda envs are outside project, but ignore exports if any
+*.conda
+*.yml
+
+# ===============================
+# ⚙️ Python Cache / Compiled
+# ===============================
+**pycache**/
 *.py[cod]
 *$py.class
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# ===============================
+# 📓 Jupyter Notebook
+# ===============================
+.ipynb_checkpoints/
 
-# MLflow
+# ===============================
+# 📊 MLflow (VERY IMPORTANT)
+# ===============================
 mlruns/
 mlartifacts/
 mlflow.db
+
+# ===============================
+# 📦 Logs & Temp Files
+# ===============================
+*.log
+logs/
+tmp/
+temp/
+
+# ===============================
+# 💻 OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# 🧪 Build / Distribution
+# ===============================
+build/
+dist/
+*.egg-info/
+
+# ===============================
+# 🛠️ IDE / Editor
+# ===============================
+.vscode/
+.idea/
